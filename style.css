@@ -377,6 +377,7 @@ nav i:hover{
     position: fixed;
     z-index: 9999;
     transition:all ease 0.2s;
+    mix-blend-mode: difference;
 }
 .cursor-blur{
     height: 300px;
