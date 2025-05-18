@@ -233,7 +233,7 @@ body::-webkit-scrollbar-thumb{
         height: 200px; 
     }
     .page1 .image img{
-        top: 48px;
+        top: 68px;
         left: -5px;
     }
 }
@@ -310,6 +310,10 @@ body::-webkit-scrollbar-thumb{
         width: 350px;
         height: 250px; 
     }
+        .page1 .image img{
+        top: 65px;
+        left: -3px;
+    }
 }
 @media (max-width:425px) {
     body nav{
@@ -358,6 +362,10 @@ body::-webkit-scrollbar-thumb{
     .gallery .slide img {
         width: 380px;
         height: 280px; 
+    }
+    .page1 .image img{
+        top: 65px;
+        left: -3px;
     }
 }
 *::selection{
