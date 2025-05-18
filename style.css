@@ -26,6 +26,10 @@ body::-webkit-scrollbar-thumb{
         width: 750px;
         height: 450px; 
     }
+    .page1 .image img{
+        top: 108px;
+        left: -5px;
+    }
     
 }
 @media (max-width:768px) {
