@@ -232,6 +232,9 @@ body::-webkit-scrollbar-thumb{
         width: 300px;
         height: 200px; 
     }
+    .page1 .image img{
+        top: 48px;
+    }
 }
 @media (max-width:375px) {
     .page2newimg{
