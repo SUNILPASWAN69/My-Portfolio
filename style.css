@@ -234,6 +234,7 @@ body::-webkit-scrollbar-thumb{
     }
     .page1 .image img{
         top: 48px;
+        left: -5px;
     }
 }
 @media (max-width:375px) {
