@@ -504,8 +504,8 @@ video{
     width: 100%;
     scale: 2;
     object-fit: cover;
-    top: 65px;
-    left: 5px;
+    top: 107px;
+    left: -4px;
     transition: 0.5s all ease;
 }
 .image img:hover{
