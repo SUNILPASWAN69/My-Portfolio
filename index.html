@@ -16,6 +16,7 @@
     </div>
     <div class="navparts">
       <a href="#">Home</a>
+     <a href="#gallery">Gallery</a>
       <a href="#contact">Contact Us</a>
       <a href="#">About Us</a>
     </div>
@@ -31,7 +32,7 @@
 <div class="main">
     <div class="page1">
         <div class="image">
-            <img src="Sunil.jpg">
+            <img src="nsunil1(1).jpg">
         </div>
         <div class="text">
             <h1>SUNIL PASWAN</h1> 
@@ -63,11 +64,35 @@
             </div>
         </div>
     </div>
-    <div class="page2new">
+     <a id="gallery"></a>
+    <div class="gallery1" style="display: flex; justify-content: center; align-items: center;margin-bottom: 20px;">
+        <h1 style="font-size:5vw;">Gallery</h1>
+    </div>
+    <div class="gallery">
+        
+            <div class="carousel">
+                <div class="slides" id="slideContainer">
+                  <div class="slide">
+                    <img src="{% static 'group.jpg' %}" alt="Slide 1" >
+                  </div>
+                  {% comment %} <div class="slide">
+                    <img src="{% static 'netik.jpg' %}" alt="Slide 2">
+                  </div>
+                  <div class="slide">
+                    <img src="{% static 'Sunil.jpg' %}" alt="Slide 3">
+                  </div> {% endcomment %}
+                </div>
+                <div class="buttons">
+                  <button onclick="prevSlide()">❮ Prev</button>
+                  <button onclick="nextSlide()">Next ❯</button>
+                </div>
+            </div>
+    </div>
+<!--     <div class="page2new">
         <div class="page2newimg">
             <img src="deppt.jpg" alt="">
         </div>
-    </div>
+    </div> -->
     <div class="page3">
         <a href="https://www.instagram.com/sunil_paswan_69/" target="_blank">
             <div class="page3-inner">
@@ -168,6 +193,28 @@
     &copy; 2024 Designed by sunil . All Rights Reserved.
   </div>
 </footer>
+    <script >
+
+  let currentSlide = 0;
+  const slides = document.getElementById("slideContainer");
+  const totalSlides = slides.children.length;
+
+  function showSlide(index) {
+    if (index >= totalSlides) currentSlide = 0;
+    else if (index < 0) currentSlide = totalSlides - 1;
+    else currentSlide = index;
+
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+
+  function nextSlide() {
+    showSlide(currentSlide + 1);
+  }
+
+  function prevSlide() {
+    showSlide(currentSlide - 1);
+  }
+</script>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
