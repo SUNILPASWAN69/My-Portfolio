@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb{
     nav .ri-close-line{
         display:none;
     }
-    .gallery .carousel{
+        .gallery .carousel{
         width: 750px;
         height: 450px;
     }
@@ -137,6 +137,9 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media (max-width:325px) {
+    .page2newimg{
+        margin: 20px;
+    }
     .page1 .text span{
         text-align: justify;
         font-size: 11px;
@@ -221,7 +224,7 @@ body::-webkit-scrollbar-thumb{
         font-size: 10vw;
 
     }
-    .gallery .carousel{
+        .gallery .carousel{
         width: 300px;
         height: 200px;
     }
@@ -231,6 +234,9 @@ body::-webkit-scrollbar-thumb{
     }
 }
 @media (max-width:375px) {
+    .page2newimg{
+        margin: 10px;
+    }
     .main .page1 .text h1{
         font-size: 10vw;
         text-wrap: wrap;
@@ -292,7 +298,7 @@ body::-webkit-scrollbar-thumb{
     body footer div:nth-child(2) {
         font-size: 2vh;
     }
-    .gallery .carousel{
+        .gallery .carousel{
         width: 350px;
         height: 250px;
     }
@@ -341,7 +347,7 @@ body::-webkit-scrollbar-thumb{
     body footer div:nth-child(2) {
         font-size: 2vh;
     }
-    .gallery .carousel{
+        .gallery .carousel{
         width: 380px;
         height: 280px;
     }
@@ -384,6 +390,7 @@ nav div a{
     font-size: 3vw;
     font-weight: 900;
     text-wrap: nowrap;
+    /* border: 1px solid red; */
 }
 .navparts{
     position: relative;
@@ -419,6 +426,7 @@ nav i:hover{
     position: fixed;
     z-index: 9999;
     transition:all ease 0.2s;
+    mix-blend-mode: difference;
 }
 .cursor-blur{
     height: 300px;
@@ -445,6 +453,7 @@ video{
     align-items: center;
     justify-content:center;
     gap: 5%;
+    /* border: 1px solid red; */
 }
 .page1 .text h1{
     font-family:'Black Ops One', cursive;
@@ -453,9 +462,10 @@ video{
     position: relative;
     letter-spacing: 10px;
     text-wrap: nowrap;
+    /* border: 1px solid red; */
 }
 .page1 h1::before{
-    content: 'SUNIL PAASWAAN';
+    content: 'SUNIL PASWAN';
     position: absolute;
     top: -3px;
     left: -3px;
@@ -476,14 +486,14 @@ video{
     position: absolute;
     height: 100%;
     width: 100%;
-    scale: 1.7;
-    top: 78px;
-    left: -1px;
-    object-fit: cover;  
+    scale: 2;
+    object-fit: cover;
+    top: 65px;
+    left: 5px;
     transition: 0.5s all ease;
 }
 .image img:hover{
-    scale: 1.8;
+    scale: 2.11;
     cursor: pointer;
 }
 .text{
@@ -495,6 +505,7 @@ video{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 .text span{
     width: 80%;
@@ -520,6 +531,7 @@ video{
     overflow: hidden;
     padding-bottom: 20vh;
     padding-top: 5vh;
+    /* border: 1px solid red; */
 }
 #card{
     height: 50vh;
@@ -539,14 +551,15 @@ video{
     scale: 1.1;
 }
 .cards1{
-    background-image: url(sunilPython.jpg);
+    background-image: url(sunilPython1.jpg);
 }
 .cards2{
     background-image: url(cce2.jpg);
 }
 .cards3{
-    background-image: url(netik.jpg);
+    background-image: url(pythonanalyst_page-0001.jpg);
 }
+
 .overlay{
     height: 100%;
     width: 100%;
@@ -576,6 +589,8 @@ video{
     align-items: center;
     justify-content: center;
     margin: 60px;
+    top: -20vh;
+    /* border: 1px solid red; */
 }
 .certificate h1{
     font-size:6vw;
@@ -584,6 +599,7 @@ video{
     position: relative;
     width: 100%;
     height: 50vh;
+    /* border: 1px solid red; */
 }
 .page3-inner{
     position: relative;
@@ -638,6 +654,7 @@ video{
     align-items:center;
     justify-content: space-between;
     padding: 20px 90px;
+    /* border: 1px solid red; */
 }
 .contactform{
     min-height: 80vh;
@@ -653,6 +670,7 @@ video{
     justify-content: center;
     gap: 20px;
     flex-direction: column;
+    /* border: 1px solid red; */
 }
 .sideForm div{
     display: flex;
@@ -720,9 +738,33 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 80px;
+    /* border: 1px solid red; */
 }
 #iconsform>a i:hover{
     scale: 0;
+}
+.page2new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    width: 99vw;
+    margin-bottom: 100px;    
+    margin-top: -100px;
+    object-fit: cover;
+}
+.page2newimg{
+    display: flex;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.page2newimg img{
+    height: 300px;
+    width: 100%;
+    cursor: pointer;
+    object-fit: cover;
+    transition: 0.5s all ease;
 }
 .carousel {
     position: relative;
@@ -768,3 +810,7 @@ footer{
   .buttons button:hover {
     background-color: black;
   }
+/* .page2newimg img:hover{
+    scale: 1.1;
+}
+ */
